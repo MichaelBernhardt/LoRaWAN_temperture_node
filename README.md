@@ -9,9 +9,11 @@ The base of this Sketch is from this excellent tutorial - https://www.mobilefish
 
 The pinout for the RFM95 on the Maduino is as follows:
 
+```
 const lmic_pinmap lmic_pins = {
     .nss = 10,
     .rxtx = LMIC_UNUSED_PIN,
     .rst = LMIC_UNUSED_PIN, // hardwired to AtMega RESET
     .dio = {4, 5, 7},
 };
+```
